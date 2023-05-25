@@ -11,12 +11,6 @@
 
 <style>
 
-    .grid{
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        gap:30px;
-    }
-
     .card{
         background:#333;
         overflow:hidden;
