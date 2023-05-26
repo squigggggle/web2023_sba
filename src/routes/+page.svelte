@@ -3,7 +3,7 @@
 
     export let data;
     let characters = data.characters;
-    console.log(characters);
+    // console.log(characters);
 
     //base link
     const BASE_URL = "https://rickandmortyapi.com/api";
@@ -30,16 +30,21 @@
 
     //I can log the results of 6 random characters but I have no idea how to get them out of the fetch
 
-    
+
 </script>
 
 <div class="grid">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
+    {#each characters as character}
+        <div class="card">
+            <div class="image"></div>
+            <div class="info">
+                <h1 class="name">{character.name}</h1>
+                <h3 class="status"><div class="dead">{character.status}</div></h3>
+                <h3 class="locationLabel">{character.location.name}</h3>
+                <h3 class="location"><a href="{character.location.url}"></a></h3>
+            </div>
+        </div>
+    {/each}
 </div>
 
 <style> 
