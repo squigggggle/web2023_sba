@@ -29,6 +29,8 @@
     // console.log(data);
 
     //I can log the results of 6 random characters but I have no idea how to get them out of the fetch
+
+    
 </script>
 
 <div class="grid">
